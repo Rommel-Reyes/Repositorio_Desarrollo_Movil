@@ -3,7 +3,7 @@ import { View, Text, FlatList } from 'react-native';
 import { StudentContext } from '../context/StudentContext';
 
 export default function StudentList() {
-  const { students } = useContext(StudentContext);
+    const { students } = useContext(StudentContext);
 
     return (
     <FlatList
