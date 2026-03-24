@@ -42,7 +42,7 @@ app.post('/api/productos', async (req, res) => {
 // Metodo de eliminar producto
 app.delete('/api/productos/:id', async (req, res) => {
     try {
-        const producto = await Producto.destroy({ where: { idProducto: req.params.id }})
+        const producto = await Producto.destroy({ where: { id: req.params.id }})
         if (producto) {
             res.status(200).json({ message: 'Producto eliminado correctamente' })
         } else {
@@ -52,6 +52,6 @@ app.delete('/api/productos/:id', async (req, res) => {
         res.status(500).json({ message: 'Error al eliminar producto: ' + error })
     }
 })
-app.listen(5000, () => {
+app.listen(5001, () => {
     console.log('eL servidor esta corriendo en puerto: 5000')
 })

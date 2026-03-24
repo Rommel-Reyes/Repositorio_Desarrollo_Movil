@@ -3,7 +3,7 @@ const sequelize = require('../db')
 
 // Modelo de producto utilizando lo aprendido en web II:
 const Producto = sequelize.define('Producto', {
-    idProducto: {
+    id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true

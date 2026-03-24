@@ -1,7 +1,7 @@
 export type EstadoProducto = "Disponible" | "No disponible"
 
 export type Producto = {
-    idProducto: number
+    id: number
     nombre: string
     descripcion: string
     precio: number
